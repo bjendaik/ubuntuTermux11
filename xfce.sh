@@ -13,7 +13,7 @@ chmod +x $HOME/Desktop/firefox.desktop
 
 #Set aliases
 echo "
-alias debian='proot-distro login ubuntu --user $username --shared-tmp'
+alias ubuntu='proot-distro login ubuntu --user $username --shared-tmp'
 #alias zrun='proot-distro login ubuntu --user $username --shared-tmp -- env DISPLAY=:1.0 MESA_LOADER_DRIVER_OVERRIDE=zink TU_DEBUG=noconform '
 #alias zrunhud='proot-distro login ubuntu --user $username --shared-tmp -- env DISPLAY=:1.0 MESA_LOADER_DRIVER_OVERRIDE=zink TU_DEBUG=noconform GALLIUM_HUD=fps '
 alias hud='GALLIUM_HUD=fps '
@@ -78,7 +78,7 @@ sed -i "326s/\\\u/$username/" $HOME/.fancybash.sh
 sed -i "327s/\\\h/termux/" $HOME/.fancybash.sh
 
 #Autostart Conky and Flameshot
-wget https://github.com/phoenixbyrd/Termux_XFCE/raw/main/config.tar.gz
+wget https://github.com/bjendaik/ubuntuTermux11/raw/main/config.tar.gz
 tar -xvzf config.tar.gz
 rm config.tar.gz
 chmod +x .config/autostart/conky.desktop
