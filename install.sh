@@ -1,5 +1,5 @@
 #!/bin/bash
-
+pkg update; pkg upgrade
 # Unofficial Bash Strict Mode
 set -euo pipefail
 IFS=$'\n\t'
