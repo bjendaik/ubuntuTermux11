@@ -19,7 +19,7 @@ username="$1"
 
 pkgs_proot=('sudo' 'wget' 'nala' 'jq' 'flameshot' 'conky-all')
 
-#Install Debian proot
+#Install UbuntuUbuntu proot
 pd install ubuntu
 pd login ubuntu --shared-tmp -- env DISPLAY=:1.0 apt update
 pd login ubuntu --shared-tmp -- env DISPLAY=:1.0 apt upgrade -y
@@ -63,7 +63,7 @@ cp .fancybash.sh $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/home/$user
 echo "source ~/.fancybash.sh" >> $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/home/$username/.bashrc
 sed -i '327s/termux/proot/' $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/home/$username/.fancybash.sh
 
-wget https://github.com/phoenixbyrd/Termux_XFCE/raw/main/conky.tar.gz
+wget https://github.com/bjendaik/ubuntuTermux11/raw/main/conky.tar.gz
 tar -xvzf conky.tar.gz
 rm conky.tar.gz
 mkdir $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/home/$username/.config
@@ -81,5 +81,5 @@ mkdir $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/home/$username/.fonts
 cp .fonts/NotoColorEmoji-Regular.ttf $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/home/$username/.fonts/ 
 
 #Setup Hardware Acceleration
-pd login ubuntu --shared-tmp -- env DISPLAY=:1.0 wget https://github.com/phoenixbyrd/Termux_XFCE/raw/main/mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
+pd login ubuntu --shared-tmp -- env DISPLAY=:1.0 wget https://github.com/bjendaik/ubuntuTermux11/raw/main/mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
 pd login ubuntu --shared-tmp -- env DISPLAY=:1.0 sudo apt install -y ./mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
