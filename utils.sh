@@ -95,7 +95,7 @@ cat <<'EOF' > "$PREFIX/bin/app-installer"
 
 # Define the directory paths
 INSTALLER_DIR="$HOME/.App-Installer"
-REPO_URL="https://github.com/bjendaik/ubuntuTermux11untuTermux11/App-Installer.git"
+REPO_URL="https://github.com/bjendaik/untuTermux11/App-Installer.git"
 DESKTOP_DIR="$HOME/Desktop"
 APP_DESKTOP_FILE="$DESKTOP_DIR/app-installer.desktop"
 
