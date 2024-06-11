@@ -44,7 +44,7 @@ if [[ -z $action ]]; then
 fi
 
 if [[ $action == "Copy .desktop file" ]]; then
-  selected_file=$(zenity --file-selection --title="Select .desktop File" --file-filter="*.desktop" --filename="$PREFIX/var/lib/proot-distro/installed-rootfs/debian/usr/share/applications")
+  selected_file=$(zenity --file-selection --title="Select .desktop File" --file-filter="*.desktop" --filename="$PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu/usr/share/applications")
 
   if [[ -z $selected_file ]]; then
     zenity --info --text="No file selected. Quitting..." --title="Operation Cancelled"
