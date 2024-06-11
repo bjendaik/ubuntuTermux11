@@ -64,10 +64,10 @@ rm Meslo.zip
 rm LICENSE.txt
 rm readme.md
 
-wget https://github.com/phoenixbyrd/Termux_XFCE/raw/main/NotoColorEmoji-Regular.ttf
+wget https://github.com/bjendaik/ubuntuTermux11/raw/main/NotoColorEmoji-Regular.ttf
 mv NotoColorEmoji-Regular.ttf .fonts
 
-wget https://github.com/phoenixbyrd/Termux_XFCE/raw/main/font.ttf
+wget https://github.com/bjendaik/ubuntuTermux11/raw/main/font.ttf
 mv font.ttf .termux/font.ttf
 
 #Setup Fancybash Termux
